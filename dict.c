@@ -1310,10 +1310,7 @@ static unsigned long rev(unsigned long v) {
  *    对游标进行翻转（reverse）的原因初看上去比较难以理解，
  *    不过阅读这份注释应该会有所帮助。
  */
-unsigned long dictScan(dict *d,
-                       unsigned long v,
-                       dictScanFunction *fn,
-                       void *privdata)
+unsigned long dictScan(dict *d, unsigned long v, dictScanFunction *fn, void *privdata)
 {
     dictht *t0, *t1;
     const dictEntry *de;
