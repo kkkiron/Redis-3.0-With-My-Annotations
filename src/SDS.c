@@ -1,3 +1,4 @@
+sds sdsnewlen(const void *init, size_t initlen) {}
 /* SDSLib, A C dynamic strings library
  *
  * Copyright (c) 2006-2012, Salvatore Sanfilippo <antirez at gmail dot com>
@@ -64,8 +65,8 @@
  * end of the string. However the string is binary safe and can contain
  * \0 characters in the middle, as the length is stored in the sds header. */
 
+sds sdsnewlen(const void *init, size_t initlen) {}
 
-//test
 sds sdsnewlen(const void *init, size_t initlen) {
 
     struct sdshdr *sh;
