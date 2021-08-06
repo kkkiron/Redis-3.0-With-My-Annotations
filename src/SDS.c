@@ -1,4 +1,3 @@
-sds sdsnewlen(const void *init, size_t initlen) {}
 /* SDSLib, A C dynamic strings library
  *
  * Copyright (c) 2006-2012, Salvatore Sanfilippo <antirez at gmail dot com>
@@ -64,8 +63,6 @@ sds sdsnewlen(const void *init, size_t initlen) {}
  * You can print the string with printf() as there is an implicit \0 at the
  * end of the string. However the string is binary safe and can contain
  * \0 characters in the middle, as the length is stored in the sds header. */
-
-sds sdsnewlen(const void *init, size_t initlen) {}
 
 sds sdsnewlen(const void *init, size_t initlen) {
 
